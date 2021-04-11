@@ -1,4 +1,4 @@
-# zadanie 1
+# 1
 
 library(stringr)
 
@@ -8,7 +8,7 @@ tekst2 = "TERYT 22; pomorskie;   Gdańsk; 12 C ; B"
 str_sub(tekst1, start = -5, end = -4)
 str_sub(tekst2, start = -5, end = -4)
 
-# zadanie 2
+# 2
 
 horoskop = function(imie, miesiac){
   if((miesiac %% 2) == 0){
@@ -17,10 +17,10 @@ horoskop = function(imie, miesiac){
   r.na = TRUE
 }
 
-horoskop("Jan", 9)
-horoskop("Jan,", 10)
+horoskop("Wojtek", 9)
+horoskop("Wojtek,", 10)
 
-# zadanie 3
+# 3
 
 horoskop_2 = function(imie, miesiac){
   if(str_detect(imie, pattern = "^K|^M|^Z") || ((miesiac %% 2) == 0)){
@@ -29,11 +29,11 @@ horoskop_2 = function(imie, miesiac){
   r.na = TRUE
 }
 
-horoskop_2("Zbigniew", 9)
-horoskop_2("Bartek", 9)
-horoskop_2("Alicja", 10)
+horoskop_2("Czesław", 9)
+horoskop_2("Kuba", 9)
+horoskop_2("Marta", 10)
 
-# zadanie 4
+# 4
 
 pomiary = "2019-03-11: 23.5, 19/03/12: 12.7, 2019.03.13: 11.1, 
 2019-marzec-14: 14.3"
@@ -42,7 +42,7 @@ daty = str_extract_all(pomiary,
                        pattern = "[0-9]+[\\-|//.][a-z0-9]+[\\-|//.][0-9]+")
 daty
 
-# zadanie 5
+# 5
 
 wart_funkcja = str_extract_all(pomiary, pattern = "[0-9]+[\\.][0-9]?[^\\,]")
 wart_funkcja
